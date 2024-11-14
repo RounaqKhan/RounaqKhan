@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @RounaqKhan
 - 👀 I’m interested in ...Coding
 - 🌱 I’m currently learning ...Coding
-- 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...IG: Rounaq.khan.9469/fb:Rounaq Khan
 - 😄 Pronouns: ...[Rou]+[naq]
 - ⚡ Fun fact: ...I can Speak 4 Languages
