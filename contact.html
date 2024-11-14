@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: orangered;
+      color: azure;    }
+    .container {
+      width: 80%;
+      margin: 40px auto;
+    }
+    form {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+      background-color: rgba(200, 186, 186, 0.3);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    input[type=text],[type=email]{
+      width: 95%;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    textarea{
+      width: 95%;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .bg-img{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(space.jpg);
+    background-size: cover;
+    animation: scaling 60s linear  infinite ;
+}
+@keyframes scaling{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.bg-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      background: rgba(0, 0, 0, 0.3);}
+    
+.mars{
+    position: absolute;
+    animation: movement 60s linear  infinite;
+    z-index: -1;
+}
+
+@keyframes movement{
+    0% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 50rem;
+        top: 20%;
+        right: -10%;
+        transform: rotate(180deg);
+    }
+    100% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(360deg);
+    }
+}
+label{
+  color: azure;
+}
+
+
+  </style>
+</head>
+<body>
+  <span class="bg-img"></span>
+  <img src="mars.png" alt="mars" class="mars">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="mailto:info@marsmission.org" method="post" enctype="text/plain">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+      
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
+      
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Human Life on Mars</title>
+  <style>
+    body {
+      background-color: orangered;
+      font-family: Arial, sans-serif;
+      color: azure;
+    
+    }
+    header {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .bg-img{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(space.jpg);
+    background-size: cover;
+    animation: scaling 60s linear  infinite ;
+}
+@keyframes scaling{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.bg-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      background: rgba(0, 0, 0, 0.3);}
+    
+.mars{
+    position: absolute;
+    animation: movement 60s linear  infinite;
+    z-index: -1;
+}
+
+@keyframes movement{
+    0% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 50rem;
+        top: 20%;
+        right: -10%;
+        transform: rotate(180deg);
+    }
+    100% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(360deg);
+    }
+}
+
+  </style>
+</head>
+<body>
+  <span class="bg-img"></span>
+  <img src="mars.png" alt="mars" class="mars">
+  <header>
+    <h1>Human Life on Mars</h1>
+  </header>
+  <section>
+    <h2>About</h2>
+    <p>Mars, the Red Planet, has captivated human imagination for centuries. With advancements in technology and space exploration, the possibility of human life on Mars is no longer science fiction.</p>
+  </section>
+  <section>
+    <h2>Mission Objective</h2>
+    <ul>
+      <li>Radiation protection</li>
+      <li>Atmospheric conditions</li>
+      <li>Food production</li>
+      <li>Water supply</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Why Mars?</h2>
+    <ul>
+      <li>Proximity to Earth</li>
+      <li>Potential resources</li>
+      <li>Unlocked scientific discoveries</li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2024 Mars Mission</p>
+    <p>Contact: <a href="http://127.0.0.1:5500/HTML%20tutorial/project%20of%20html/contact.html">info@marsmission.org</a></p>
+    <p>Follow us: <a href="https://www.facebook.com/rohima.khan.9469/">facebook@MarsMission</a></p>
+  </footer>
+</body>
+</html>
